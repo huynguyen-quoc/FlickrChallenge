@@ -56,13 +56,14 @@ class AppError: JSONDecodable {
 class FlickrRequestFactory {
     
     static let tron = TRON(baseURL: "https://api.flickr.com/services/rest")
+    static let API_KEY:String = "23a868882f94ae2ecc5bc49ea78cda51"
     
     static func readPhotos(pageSize:Int, page:Int) -> APIRequest<FlickPhotoResponse, AppError>  {
         let request: APIRequest<FlickPhotoResponse, AppError> = tron.swiftyJSON.request("")
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.photos.getRecent",
-            "api_key"        : "23a868882f94ae2ecc5bc49ea78cda51",
+            "api_key"        : API_KEY,
             "per_page"       : pageSize,
             "format"         : "json",
             "nojsoncallback" : true,
@@ -78,7 +79,7 @@ class FlickrRequestFactory {
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.photos.comments.getList",
-            "api_key"        : "23a868882f94ae2ecc5bc49ea78cda51",
+            "api_key"        : API_KEY,
             "photo_id"       : id,
             "format"         : "json",
             "nojsoncallback" : true
@@ -93,7 +94,7 @@ class FlickrRequestFactory {
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.people.getInfo",
-            "api_key"        : "23a868882f94ae2ecc5bc49ea78cda51",
+            "api_key"        : API_KEY,
             "user_id"        :  id,
             "format"         : "json",
             "nojsoncallback" : true
