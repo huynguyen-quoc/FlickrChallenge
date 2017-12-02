@@ -30,6 +30,8 @@ class MainViewController: UIViewController {
     var page:Int = 1
     var pageSize:Int = 30
     var layoutType = LayoutType.Grid
+    var dialogHelper: DialogHelper = DialogHelper()
+    var flickrService: FlickrService = FlickrService()
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var loadingActivity: UIActivityIndicatorView!
@@ -71,13 +73,11 @@ class MainViewController: UIViewController {
     }
     
     private func showAlert(message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+       dialogHelper.presentAlert(title: "Error", message: message, onAction: nil, onTopOf: self)
     }
     
     private func fetchPhotos(pageSize: Int, page: Int) {
-        let request = FlickrRequestFactory.readPhotos(pageSize: pageSize, page: page)
+        let request = flickrService.readPhotos(pageSize: pageSize, page: page)
         request.perform(withSuccess: { response in
             self.photos += response.photo
             self.totalPage = response.pages

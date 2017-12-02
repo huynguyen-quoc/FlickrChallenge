@@ -53,17 +53,24 @@ class AppError: JSONDecodable {
         
     }
 }
-class FlickrRequestFactory {
+
+protocol FlickrDelegate {
+    func readPhotos(pageSize:Int, page:Int) -> APIRequest<FlickPhotoResponse, AppError>
+    func readComments(id:String) -> APIRequest<FlickCommentResponse, AppError>
+    func readUserProfile(id: String) -> APIRequest<FlickUserResponse, AppError>
+}
+
+class FlickrService : FlickrDelegate {
     
-    static let tron = TRON(baseURL: "https://api.flickr.com/services/rest")
-    static let API_KEY:String = "23a868882f94ae2ecc5bc49ea78cda51"
+    let tron = TRON(baseURL: "https://api.flickr.com/services/rest")
+    let API_KEY:String = "23a868882f94ae2ecc5bc49ea78cda51"
     
-    static func readPhotos(pageSize:Int, page:Int) -> APIRequest<FlickPhotoResponse, AppError>  {
+    func readPhotos(pageSize:Int, page:Int) -> APIRequest<FlickPhotoResponse, AppError>  {
         let request: APIRequest<FlickPhotoResponse, AppError> = tron.swiftyJSON.request("")
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.photos.getRecent",
-            "api_key"        : API_KEY,
+            "api_key"        : self.API_KEY,
             "per_page"       : pageSize,
             "format"         : "json",
             "nojsoncallback" : true,
@@ -74,12 +81,12 @@ class FlickrRequestFactory {
         return request
     }
     
-    static func readComments(id:String) -> APIRequest<FlickCommentResponse, AppError> {
+    func readComments(id:String) -> APIRequest<FlickCommentResponse, AppError> {
         let request: APIRequest<FlickCommentResponse, AppError> = tron.swiftyJSON.request("")
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.photos.comments.getList",
-            "api_key"        : API_KEY,
+            "api_key"        : self.API_KEY,
             "photo_id"       : id,
             "format"         : "json",
             "nojsoncallback" : true
@@ -89,12 +96,12 @@ class FlickrRequestFactory {
         return request
     }
     
-    static func readUserProfile(id: String) -> APIRequest<FlickUserResponse, AppError> {
+    func readUserProfile(id: String) -> APIRequest<FlickUserResponse, AppError> {
         let request: APIRequest<FlickUserResponse, AppError> = tron.swiftyJSON.request("")
         request.method = .get
         let parameters : [String : Any] = [
             "method"         : "flickr.people.getInfo",
-            "api_key"        : API_KEY,
+            "api_key"        : self.API_KEY,
             "user_id"        :  id,
             "format"         : "json",
             "nojsoncallback" : true

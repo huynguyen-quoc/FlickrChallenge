@@ -31,6 +31,7 @@ class DetailViewController: UIViewController {
         "username" : nil,
         "comments" : nil
     ]
+    var flickrService: FlickrService = FlickrService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ class DetailViewController: UIViewController {
     private func fetchUsers() {
         self.isLoadingUser = true
         self.error["username"] = nil
-        let request = FlickrRequestFactory.readUserProfile(id: self.userId)
+        let request = flickrService.readUserProfile(id: self.userId)
         request.perform(withSuccess: { response in
             self.username = response.username == nil ? "" : response.username!["_content"] as! String
             self.isLoadingUser = false
@@ -73,7 +74,7 @@ class DetailViewController: UIViewController {
     private func fetchComments() {
         self.isLoadingComments = true
         self.error["comments"] = nil
-        let request = FlickrRequestFactory.readComments(id: self.photoId)
+        let request = flickrService.readComments(id: self.photoId)
         request.perform(withSuccess: { response in
             self.comments += response.comments == nil ? [] : response.comments!
             self.isLoadingComments  = false

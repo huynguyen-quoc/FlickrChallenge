@@ -8,14 +8,12 @@ target 'FlickrChallenge' do
   # Pods for FlickrChallenge
   pod 'TRON', '~> 4.0'
   pod 'SDWebImage'
+  
   target 'FlickrChallengeTests' do
     inherit! :search_paths
     # Pods for testing
-  end
-
-  target 'FlickrChallengeUITests' do
-    inherit! :search_paths
-    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
 end
