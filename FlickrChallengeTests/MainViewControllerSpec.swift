@@ -49,14 +49,6 @@ class MainViewControllerSpec: QuickSpec {
                     expect(subject.layoutType == LayoutType.List).to(beTrue())
                 }
             }
-            
-            context("when segment is did changed to index 1") {
-                it("should have layout is list") {
-                    subject.segmentControl.selectedSegmentIndex = 1
-                    subject.segmentedControlDidChanged(subject.segmentControl)
-                    expect(subject.layoutType == LayoutType.List).to(beTrue())
-                }
-            }
 
             context("when has photos") {
                 beforeEach {

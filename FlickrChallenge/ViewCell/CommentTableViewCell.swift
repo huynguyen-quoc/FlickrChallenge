@@ -17,14 +17,5 @@ class CommentTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-       // self.setup()
-    }
-
-    private func setup() {
-        self.txtComment.textContainerInset = UIEdgeInsets.zero
-    }
 
 }
