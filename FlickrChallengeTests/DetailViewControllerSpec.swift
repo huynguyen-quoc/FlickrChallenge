@@ -120,7 +120,7 @@ class DetailViewControllerSpec: QuickSpec {
                     subject.isLoadingComments = false
 
                 }
-                it("shows a error") {
+                it("shows an error") {
                     expect(subject.tableView.numberOfSections).to(equal(2))
                     expect(subject.tableView.numberOfRows(inSection: 1)).to(equal(1))
 
@@ -138,7 +138,7 @@ class DetailViewControllerSpec: QuickSpec {
                     subject.isLoadingComments = false
 
                 }
-                it("shows a error") {
+                it("shows no result") {
                     expect(subject.tableView.numberOfSections).to(equal(2))
                     expect(subject.tableView.numberOfRows(inSection: 1)).to(equal(1))
 

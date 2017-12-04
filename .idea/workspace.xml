@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cebd8f2b-d7f6-451a-8f14-77b45f488c8e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/FlickrChallenge.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/FlickrChallenge.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/FlickrChallenge/Service/FlickrService.swift" afterPath="$PROJECT_DIR$/FlickrChallenge/Service/FlickrService.swift" />
+      <change beforePath="$PROJECT_DIR$/FlickrChallenge/ViewController/MainViewController.swift" afterPath="$PROJECT_DIR$/FlickrChallenge/ViewController/MainViewController.swift" />
+      <change beforePath="$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerSpec.swift" afterPath="$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerSpec.swift" />
       <change beforePath="$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift" afterPath="$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift" />
     </list>
     <ignored path="$PROJECT_DIR$/../../DEPLOY/IOS/BUILD/Product/" />
@@ -15,70 +17,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0578689D-D2CA-4E1F-91F7-53B45A42830C" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Podfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewControllerSpec.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainViewControllerSpec.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#155#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailViewControllerSpec.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerSpec.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="147" column="67" lean-forward="false" selection-start-line="147" selection-start-column="67" selection-end-line="147" selection-end-column="67" />
-              <folding>
-                <element signature="e#157#169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FlickrChallenge/ViewController/DetailViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="131" column="51" lean-forward="false" selection-start-line="131" selection-start-column="43" selection-end-line="131" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailViewControllerTests.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerTests.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlickrServiceSpec.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/FlickrServiceSpec.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="28" column="13" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="e#150#162#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +40,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/FlickrChallengeTests/FlickrServiceSpec.swift" />
-        <option value="$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift" />
         <option value="$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerSpec.swift" />
+        <option value="$PROJECT_DIR$/FlickrChallenge/ViewController/MainViewController.swift" />
+        <option value="$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift" />
       </list>
     </option>
   </component>
@@ -179,30 +127,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest/Kiwi.FlickrServiceSpec">
+  <component name="RunManager">
     <configuration name="FlickrChallenge" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FlickrChallenge" TARGET_NAME="FlickrChallenge" CONFIG_NAME="Debug" SCHEME_NAME="FlickrChallenge" RUN_TARGET_PROJECT_NAME="FlickrChallenge" RUN_TARGET_NAME="FlickrChallenge" MAKE_ACTIVE="TRUE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
     </configuration>
-    <configuration name="FlickrServiceSpec" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FlickrChallenge" TARGET_NAME="FlickrChallengeTests" CONFIG_NAME="Debug" SCHEME_NAME="FlickrServiceSpec" TEST_CLASS="FlickrServiceSpec" TEST_MODE="SUITE_TEST">
-      <envs />
-    </configuration>
-    <configuration name="MainViewControllerSpec" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FlickrChallenge" TARGET_NAME="FlickrChallengeTests" CONFIG_NAME="Debug" SCHEME_NAME="MainViewControllerSpec" TEST_CLASS="MainViewControllerSpec" TEST_MODE="SUITE_TEST">
-      <envs />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.FlickrChallenge" />
-      <item index="1" class="java.lang.String" itemvalue="XCTest/Kiwi.MainViewControllerSpec" />
-      <item index="2" class="java.lang.String" itemvalue="XCTest/Kiwi.FlickrServiceSpec" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="XCTest/Kiwi.FlickrServiceSpec" />
-        <item index="1" class="java.lang.String" itemvalue="XCTest/Kiwi.MainViewControllerSpec" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -211,13 +142,34 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlickrServiceSpec - 2017.12.03 at 06h 03m 15s.xml">
-      <configuration name="FlickrServiceSpec" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
-    <history-entry file="MainViewControllerSpec - 2017.12.03 at 05h 50m 32s.xml">
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 33m 38s.xml">
       <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
     </history-entry>
-    <history-entry file="MainViewControllerSpec - 2017.12.03 at 05h 51m 43s.xml">
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 34m 21s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 37m 14s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 45m 42s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 46m 31s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 49m 29s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 52m 36s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 55m 20s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 57m 09s.xml">
+      <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="MainViewControllerSpec - 2017.12.04 at 10h 58m 03s.xml">
       <configuration name="MainViewControllerSpec" configurationId="OCUnitRunConfiguration" />
     </history-entry>
   </component>
@@ -226,15 +178,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39887244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -250,9 +202,70 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="19" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="OCUnitRunConfiguration">
+        <watch expression="cell" language="Swift" />
+        <watch expression="subject.collectionView?.indexPath(for: cell)!" language="Swift" />
+        <watch expression="source.collectionView.numberOfItems(inSection: 0)" language="Swift" />
+        <watch expression="subject.presentedViewController" language="Swift" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>subject.presentedViewController</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cell</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.collectionView?.indexPath(for: cell)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>source.collectionView.numberOfItems(inSection: 0)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>source.collectionView</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subject.collectionView?.indexPath(for: cell)!</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subject.collectionView?.indexPath(for: cell)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subject.collectionView.indexPath(for: cell)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subject.collectionView.indexPath(for: cell)!</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.collectionView.indexPath(for: cell)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Podfile">
@@ -303,16 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/FlickrServiceSpec.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="e#150#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerTests.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -329,30 +332,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift">
+    <entry file="file://$PROJECT_DIR$/FlickrChallenge/ViewController/UserPhotoTableViewCell.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="e#155#167#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlickrChallenge/ViewController/DetailViewController.swift">
+    <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/FlickrServiceSpec.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="131" column="51" lean-forward="false" selection-start-line="131" selection-start-column="43" selection-end-line="131" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#150#162#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/DetailViewControllerSpec.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="147" column="67" lean-forward="false" selection-start-line="147" selection-start-column="67" selection-end-line="147" selection-end-column="67" />
+        <state relative-caret-position="215">
+          <caret line="140" column="39" lean-forward="false" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
           <folding>
-            <element signature="e#157#169#0" expanded="true" />
+            <element signature="e#157#169#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrChallenge/ViewController/MainViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrChallenge/ViewController/DetailViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrChallengeTests/MainViewControllerSpec.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#155#167#0" expanded="true" />
           </folding>
         </state>
       </provider>

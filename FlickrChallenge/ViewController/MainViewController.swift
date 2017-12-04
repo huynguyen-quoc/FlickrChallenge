@@ -49,16 +49,12 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let identifier = segue.identifier
         if identifier == Storyboard.showDetailSegue {
             let vc:DetailViewController = segue.destination as! DetailViewController
-            let row:Int = self.collectionView.indexPathsForSelectedItems![0].row
+            let source:MainViewController = segue.source as! MainViewController
+            let row:Int = source.collectionView.indexPathsForSelectedItems![0].row
             let photo = self.photos[row]
             let photoId = photo["id"] as! String
             let userId:String = photo["owner"] as! String

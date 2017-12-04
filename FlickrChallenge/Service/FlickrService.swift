@@ -18,12 +18,21 @@ class FlickPhotoResponse: JSONDecodable {
     var photo:[[String:Any]]
     required init(json : JSON) {
         let data:[String:Any] = json.dictionaryObject!
-        let photos:[String:Any] = data["photos"] as! [String:Any]
-        self.page = photos["page"] as! Int
-        self.pages = photos["pages"] as! Int
-        self.perPage = photos["perpage"] as! Int
-        self.total = photos["total"] as! Int
-        self.photo = photos["photo"] as! [[String:Any]]
+        let stat:String = data["stat"] as! String
+        if stat == "ok" {
+            let photos:[String:Any] = data["photos"] as! [String:Any]
+            self.page = photos["page"] as! Int
+            self.pages = photos["pages"] as! Int
+            self.perPage = photos["perpage"] as! Int
+            self.total = photos["total"] as! Int
+            self.photo = photos["photo"] as! [[String:Any]]
+        } else {
+            self.page = 0
+            self.pages = 0
+            self.perPage = 0
+            self.total = 0
+            self.photo = []
+        }
     }
 }
 
@@ -32,9 +41,15 @@ class FlickCommentResponse: JSONDecodable {
     var comments:[[String:Any]]?
     required init(json : JSON) {
         let data:[String:Any] = json.dictionaryObject!
-        let commentDict:[String:Any] = data["comments"] as! [String:Any]
-        self.photoId = commentDict["photo_id"] as! String
-        self.comments = commentDict["comment"] as? [[String:Any]]
+        let stat:String = data["stat"] as! String
+        if stat == "ok" {
+            let commentDict:[String:Any] = data["comments"] as! [String:Any]
+            self.photoId = commentDict["photo_id"] as! String
+            self.comments = commentDict["comment"] as? [[String:Any]]
+        } else {
+            self.photoId = ""
+            self.comments = nil
+        }
     }
 }
 
@@ -42,8 +57,13 @@ class FlickUserResponse: JSONDecodable {
     var username:[String:Any]?
     required init(json : JSON) {
         let data:[String:Any] = json.dictionaryObject!
-        let userProfile:[String:Any]? = data["person"] as? [String:Any]
-        self.username = userProfile == nil ? nil : (userProfile!["username"] as? [String : Any])
+        let stat:String = data["stat"] as! String
+        if stat == "ok" {
+            let userProfile:[String:Any]? = data["person"] as? [String:Any]
+            self.username = userProfile == nil ? nil : (userProfile!["username"] as? [String : Any])
+        } else {
+            self.username = nil
+        }
     }
 }
 
